@@ -1,0 +1,13 @@
+* {
+  /* set background to img/background.avif
+
+  creator:
+  Dan Cristian Pădureț
+  https://unsplash.com/@dancristianpaduret */
+
+  background: url('img/background.avif');
+}
+
+.test {
+  color: red;
+}
