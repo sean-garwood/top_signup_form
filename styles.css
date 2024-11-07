@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Norse Bold';
+  src: url('fonts/Norse-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   /* set background to img/background.avif
 
@@ -5,9 +12,93 @@
   Dan Cristian Pădureț
   https://unsplash.com/@dancristianpaduret */
 
-  background: url('img/background.avif');
+  /* background: url('img/background.avif'); */
+  box-sizing: border-box;
 }
 
-.test {
-  color: red;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input:required {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+h2 {
+  font-family: 'Norse Bold', sans-serif;
+  font-size: 2em;
+  margin: 0;
+}
+
+html,
+body {
+  font: 1em/ 1.4 'Helvetica Neue', Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 1em;
+}
+
+button,
+input,
+select {
+  appearance: none;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.content {
+  margin: 0 auto;
+  min-width: 50vw;
+}
+
+.credit {
+  font-size: 0.8em;
+  margin-top: 1em;
+  justify-content: center;
+}
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  max-width: 35vw;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-fields-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.logo {
+  margin: 0 1em 0 0;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.side {
+  flex: 1;
 }

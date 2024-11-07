@@ -4,12 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>top|signup form</title>
+  <title>top | signup form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="test">some content</div>
+  <div class="main">
+    <div class="side">
+      <div class="branding">
+        <div class="logo">
+          <img src="img/tiamat.jpg" alt="logo" />
+        </div>
+        <div class="brand">
+          <h2>matltc</h2>
+        </div>
+      </div>
+      <div class="credit">
+        <p> background: Dan Cristian Pădureț https://unsplash.com/@dancristianpaduret</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="description">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize
+          your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form action="" method="post">
+        <fieldset>
+          <legend>Sign up now</legend>
+          <div class="form-fields-container">
+            <div class="left-fields">
+              <div class="field-container">
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="first-name" />
+              </div>
+              <div class="field-container">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="field-container">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+              </div>
+            </div>
+            <div class="right-fields">
+              <div class="field-container">
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="last-name" />
+              </div>
+              <div class="field-container">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" />
+              </div>
+              <div class="field-container">
+                <label for="confirm-password">Confirm password</label>
+                <input type="password" name="confirm-password" id="confirm-password" required />
+              </div>
+            </div>
+          </div> <!-- form-fields-container -->
+        </fieldset>
+        <fieldset>
+          <div class="form-buttons-container">
+            <button type="submit">Sign up</button>
+            <p>Already have an account? <a href="./login.html">Log in</a></p>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
