@@ -6,13 +6,6 @@
 }
 
 * {
-  /* set background to img/background.avif
-
-  creator:
-  Dan Cristian Pădureț
-  https://unsplash.com/@dancristianpaduret */
-
-  /* background: url('img/background.avif'); */
   box-sizing: border-box;
 }
 
@@ -41,7 +34,6 @@ body {
   font: 1em/ 1.4 'Helvetica Neue', Arial, sans-serif;
   height: 100%;
   margin: 0;
-  padding: 1em;
 }
 
 button,
@@ -56,25 +48,29 @@ select {
 
 .branding {
   display: flex;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1em;
 }
 
 .content {
-  margin: 0 auto;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
   min-width: 50vw;
 }
 
 .credit {
   font-size: 0.8em;
   margin-top: 1em;
-  justify-content: center;
+  text-align: center;
 }
 
 .description {
   font-size: 1.2em;
-  margin-bottom: 1em;
+  margin: 0 0 1em 1em;
   max-width: 35vw;
 }
 
@@ -100,5 +96,11 @@ select {
 }
 
 .side {
+  background: url('img/background.avif');
   flex: 1;
+  color: #888;
+}
+
+.white-background {
+  background-color: white;
 }
