@@ -12,11 +12,11 @@
   <div class="main">
     <div class="side">
       <div class="branding">
-        <div class="logo">
+        <div class="logo-brand">
           <img src="img/tiamat.jpg" alt="logo" />
-        </div>
-        <div class="brand">
-          <h2>matltc</h2>
+          <div class="brand">
+            <h2>matltc</h2>
+          </div>
         </div>
       </div>
       <div class="credit">
@@ -24,40 +24,43 @@
       </div>
     </div>
     <div class="content">
-      <div class="description">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize
-          your deepest dreams. Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to.</p>
+      <div class="description-container">
+        <div class="description">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up <em>now</em> to get started.</p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
       </div>
-      <form action="" method="post">
+      <!-- debugging. would be post and would create a session, etc. -->
+      <form action="login.html" method="get">
         <fieldset class="white-background">
-          <legend>Sign up now</legend>
+          <p class="do-it">Let's do this!</p>
           <div class="form-fields-container">
             <div class="left-fields">
               <div class="field-container">
-                <label for="first-name">First name</label>
+                <label for="first-name">FIRST NAME</label>
                 <input type="text" name="first-name" id="first-name" />
               </div>
               <div class="field-container">
-                <label for="email">Email</label>
+                <label for="email">EMAIL</label>
                 <input type="email" name="email" id="email" required />
               </div>
               <div class="field-container">
-                <label for="password">Password</label>
+                <label for="password">PASSWORD</label>
                 <input type="password" name="password" id="password" required />
               </div>
             </div>
             <div class="right-fields">
               <div class="field-container">
-                <label for="last-name">Last name</label>
+                <label for="last-name">LAST NAME</label>
                 <input type="text" name="last-name" id="last-name" />
               </div>
               <div class="field-container">
-                <label for="phone">Phone</label>
+                <label for="phone">PHONE</label>
                 <input type="tel" name="phone" id="phone" />
               </div>
               <div class="field-container">
-                <label for="confirm-password">Confirm password</label>
+                <label for="confirm-password">CONFIRM PASSWORD</label>
                 <input type="password" name="confirm-password" id="confirm-password" required />
               </div>
             </div>
@@ -65,8 +68,10 @@
         </fieldset>
         <fieldset>
           <div class="form-buttons-container">
-            <button type="submit">Sign up</button>
-            <p>Already have an account? <a href="./login.html">Log in</a></p>
+            <button type="submit" class="stylized-button">Create Account</button>
+            <div class="login-container">
+              <p>Already have an account? <a href="./login.html" class="login">Log in</a></p>
+            </div>
           </div>
         </fieldset>
       </form>

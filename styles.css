@@ -9,18 +9,23 @@
   box-sizing: border-box;
 }
 
+button,
+input {
+  appearance: none;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-}
-
-input:required {
-  border-color: red;
-}
-
-input:valid {
-  border-color: green;
 }
 
 h2 {
@@ -36,42 +41,54 @@ body {
   margin: 0;
 }
 
-button,
-input,
-select {
-  appearance: none;
-  font-family: inherit;
-  font-size: 100%;
-  padding: 0;
-  margin: 0;
+label {
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  padding: 0.2em;
 }
 
 .branding {
+  align-items: flex-end;
   display: flex;
-  min-height: 100vh;
   justify-content: center;
-  align-items: center;
+  min-height: 40vh;
 }
 
 .content {
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: stretch;
   min-height: 100vh;
-  min-width: 50vw;
+  min-width: 60vw;
 }
 
 .credit {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   font-size: 0.8em;
-  margin-top: 1em;
-  text-align: center;
+  justify-content: flex-end;
+  min-height: 60vh;
 }
 
 .description {
-  font-size: 1.2em;
   margin: 0 0 1em 1em;
-  max-width: 35vw;
+  max-width: 40vw;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 40vh;
+  justify-content: flex-end;
+  padding: 0 0 3em 1.4em;
+}
+
+.description,
+.do-it {
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .field-container {
@@ -79,14 +96,48 @@ select {
   flex-direction: column;
 }
 
+.field-container input {
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  height: 3.5em;
+  width: 250px;
+}
+
+.field-container input:focus {
+  border: 2px solid #4e9cbd;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.field-container input:user-invalid {
+  border-color: red;
+}
+
+.form-buttons-container {
+  margin: 2em 0 0 2em;
+}
+
 .form-fields-container {
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  gap: 3em;
 }
 
-.logo {
-  margin: 0 1em 0 0;
+.login {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-container {
+  font-size: 1.8em;
+}
+
+.logo-brand {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-size: 48px;
+  justify-content: center;
+  min-width: 40vw;
 }
 
 .main {
@@ -97,10 +148,24 @@ select {
 
 .side {
   background: url('img/background.avif');
-  flex: 1;
   color: #888;
+  flex: 1;
+  min-height: 100vh;
+  min-width: 40vw;
+}
+
+.stylized-button {
+  background-color: #596d48;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-size: 2em;
+  padding: 0.75em 3.5em;
 }
 
 .white-background {
   background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 0 0 24px 36px;
 }
